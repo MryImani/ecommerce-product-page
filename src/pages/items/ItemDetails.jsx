@@ -3,13 +3,17 @@ import './item-details.css'
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../state";
 import { useState } from "react";
+import HomeCarousel from "../../components/global/HomeCarousel";
 export default function ItemDetails(props) {
     const { item} = props
     const [count,setCount] = useState(1);
     const dispatch = useDispatch();
   return (
     <div className="row item-details  mt-5 px-lg-5 mb-5">
-      <div className="col-12 col-lg-7 d-flex flex-wrap">
+       <div className="d-block d-lg-none">
+        <HomeCarousel/>
+        </div> 
+      <div className="col-12 col-lg-7  flex-wrap d-lg-flex d-none">
         <div className=" flex-fill m-3">
           <Image
             className="  img-fluid rounded-4"
