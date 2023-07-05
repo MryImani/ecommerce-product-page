@@ -8,7 +8,7 @@ export default function ItemDetails(props) {
     const [count,setCount] = useState(1);
     const dispatch = useDispatch();
   return (
-    <div className="row item-details  mt-5 px-lg-5 ">
+    <div className="row item-details  mt-5 px-lg-5 mb-5">
       <div className="col-12 col-lg-7 d-flex flex-wrap">
         <div className=" flex-fill m-3">
           <Image
@@ -69,7 +69,7 @@ export default function ItemDetails(props) {
           </p>
         </div>
         <div className=" d-flex flex-column flex-lg-row align-items-center w-100">
-          <div className="me-2 d-flex justify-content-around p-3 w-25 bg-body-tertiary rounded-3 ">
+          <div className="me-2 d-flex justify-content-around p-3 w-100 w-lg-25  bg-body-tertiary rounded-3 mb-3 mb-lg-0">
             <span onClick={() => setCount(Math.max(count - 1, 1))}>
               <i class="bi bi-dash h4"></i>
             </span>
@@ -78,7 +78,7 @@ export default function ItemDetails(props) {
               <i class="bi bi-plus h4"></i>
             </span>
           </div>
-          <div className=" flex-grow-1 ">
+          <div className="w-100 w-lg-75 ">
             <button
               className="add-to-cart-btn d-flex align-items-center py-3 px-5 border-0 rounded-3 text-white fw-bold w-100 justify-content-center"
               onClick={() => {
