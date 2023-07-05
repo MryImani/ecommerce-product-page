@@ -8,3 +8,17 @@
 .navbar .badge{
     background-color: #FF7E1B;
 }
+.navbar .bi-cart3:hover ~ div{
+ display: block;
+}
+.navbar .cart{
+    position: absolute;
+    right: -10rem;
+    top: 3rem;
+    border-radius: 0.5rem;
+    display: none;
+    width: 25rem;
+    padding: 1rem 0;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}

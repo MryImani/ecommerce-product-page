@@ -61,11 +61,11 @@ export default function ItemDetails(props) {
           {item.detail}
         </p>
         <p className="d-flex align-items-center ">
-          <span className="item-current-price fw-bold h4">{item.price}</span>
+          <span className="item-current-price fw-bold h4">${item.price}</span>
           <span className="item-off fw-bold mx-4 px-1 rounded  "> {item.off} </span>
         </p>
         <p className="item-old-price text-body-tertiary fw-bold text-decoration-line-through  ">
-          {item.oldPrice}
+          ${item.oldPrice}
         </p>
         <div className=" d-flex align-items-center w-100">
           <div className="me-2 d-flex justify-content-around p-3 w-25 bg-body-tertiary rounded-3 ">

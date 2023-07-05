@@ -1,6 +1,7 @@
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './navbar.css'
+import Cart from "../cart/Cart";
 export default function Navbar(props){
     return (
       <header className="container  d-flex align-items-center border-0 border-bottom border-light-subtle py-lg-0 py-3 ">
@@ -52,11 +53,27 @@ export default function Navbar(props){
             </li>
           </ul>
           <div className=" d-flex align-items-center ">
-            <div className="mx-5">
+            <div className="mx-5 position-relative ">
               <i className="bi bi-cart3 h3 text-secondary fw-bold"></i>
               <span class="badge rounded-pill badge-notification position-absolute">
-                {props.cartLength !== 0 ? props.cartLength : null }
+                {props.cartLength !== 0 ? props.cartLength : null}
               </span>
+              <div className="cart">
+                <p className="fw-bold border-0 border-bottom border-light-subtle px-3 pb-3">
+                  Cart
+                </p>
+                <div className="">
+                  {props.cartLength !== 0 ? (
+                    <Cart />
+                  ) : (
+                    <div className="d-flex align-items-center  justify-content-center ">
+                      <p className="fw-bold text-secondary py-5 ">
+                        Your cart is empty
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
             <div>
               <Image
