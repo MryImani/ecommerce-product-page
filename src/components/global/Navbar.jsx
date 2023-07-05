@@ -10,7 +10,7 @@ export default function Navbar(props){
         <Image src="/images/logo.svg" />
         <nav className="navbar p-0 d-flex justify-content-end justify-content-lg-between  flex-grow-1 align-items-center">
           <ul className="d-none d-lg-flex list-unstyled m-0 mx-lg-5 ">
-            <li className="me-3 py-5">
+            <li className="me-3 py-4">
               <Link
                 className=" text-decoration-none text-secondary fw-semibold"
                 to="/"
@@ -18,7 +18,7 @@ export default function Navbar(props){
                 Collections
               </Link>
             </li>
-            <li className="mx-3 py-5">
+            <li className="mx-3 py-4">
               <Link
                 className="text-decoration-none text-secondary fw-semibold"
                 to="/"
@@ -26,7 +26,7 @@ export default function Navbar(props){
                 Men
               </Link>
             </li>
-            <li className="mx-3 py-5">
+            <li className="mx-3 py-4">
               <Link
                 className="text-decoration-none text-secondary fw-semibold"
                 to="/"
@@ -34,7 +34,7 @@ export default function Navbar(props){
                 Women
               </Link>
             </li>
-            <li className="mx-3 py-5">
+            <li className="mx-3 py-4">
               <Link
                 className="text-decoration-none text-secondary fw-semibold"
                 to="/"
@@ -42,7 +42,7 @@ export default function Navbar(props){
                 About
               </Link>
             </li>
-            <li className="mx-3 py-5">
+            <li className="mx-3 py-4">
               <Link
                 className="text-decoration-none text-secondary fw-semibold "
                 to="/"

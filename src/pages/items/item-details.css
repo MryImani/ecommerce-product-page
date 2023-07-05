@@ -1,0 +1,13 @@
+.item-details .title{
+    color: #e09459;
+}
+.item-details .add-to-cart-btn{
+    background-color: #FF7E1B;
+}
+.item-details .bi-plus,.item-details .bi-dash{
+    color: #e09459;
+}
+.item-details .item-off{
+    color: #e09459;
+    background-color: #f3e7dd;
+}
