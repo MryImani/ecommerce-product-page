@@ -54,6 +54,9 @@ export default function Navbar(props){
           <div className=" d-flex align-items-center ">
             <div className="mx-5">
               <i className="bi bi-cart3 h3 text-secondary fw-bold"></i>
+              <span class="badge rounded-pill badge-notification position-absolute">
+                {props.cartLength !== 0 ? props.cartLength : null }
+              </span>
             </div>
             <div>
               <Image
