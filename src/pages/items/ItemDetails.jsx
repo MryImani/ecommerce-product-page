@@ -9,7 +9,7 @@ export default function ItemDetails(props) {
     const dispatch = useDispatch();
   return (
     <div className="row item-details  mt-5 px-lg-5 ">
-      <div className="col-7 d-flex flex-wrap">
+      <div className="col-12 col-lg-7 d-flex flex-wrap">
         <div className=" flex-fill m-3">
           <Image
             className="  img-fluid rounded-4"
@@ -52,22 +52,23 @@ export default function ItemDetails(props) {
           />
         </div>
       </div>
-      <div className="col-5 mt-3 pt-5">
+      <div className="col-12 col-lg-5 mt-3 pt-5">
         <p className="title text-uppercase fw-bold ">Sneaker Company</p>
-        <p className="item-name h1 fw-bolder mb-5">
-          {item.name}
-        </p>
-        <p className="item-detail text-secondary fw-medium ">
-          {item.detail}
-        </p>
-        <p className="d-flex align-items-center ">
-          <span className="item-current-price fw-bold h4">${item.price}</span>
-          <span className="item-off fw-bold mx-4 px-1 rounded  "> {item.off} </span>
-        </p>
-        <p className="item-old-price text-body-tertiary fw-bold text-decoration-line-through  ">
-          ${item.oldPrice}
-        </p>
-        <div className=" d-flex align-items-center w-100">
+        <p className="item-name h1 fw-bolder mb-5">{item.name}</p>
+        <p className="item-detail text-secondary fw-medium ">{item.detail}</p>
+        <div className="d-flex flex-lg-column justify-content-between  ">
+          <p className="d-flex align-items-center ">
+            <span className="item-current-price fw-bold h4">${item.price}</span>
+            <span className="item-off fw-bold mx-4 px-1 rounded  ">
+              {" "}
+              {item.off}{" "}
+            </span>
+          </p>
+          <p className="item-old-price text-body-tertiary fw-bold text-decoration-line-through  ">
+            ${item.oldPrice}
+          </p>
+        </div>
+        <div className=" d-flex flex-column flex-lg-row align-items-center w-100">
           <div className="me-2 d-flex justify-content-around p-3 w-25 bg-body-tertiary rounded-3 ">
             <span onClick={() => setCount(Math.max(count - 1, 1))}>
               <i class="bi bi-dash h4"></i>
