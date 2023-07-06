@@ -11,7 +11,7 @@ export default function Menu(props){
         <div className="position-fixed left-0 bottom-0 w-50 h-100 bg-white ">
           <div className="p-3 overflow-auto h-100">
             <div className="cursor-pointer" onClick={props.closeMenu}>
-              <i class="bi bi-x h1"></i>
+              <i className="bi bi-x h1"></i>
             </div>
             <ul className="m-0 list-unstyled mt-5 ">
               <li className="mt-3  ">

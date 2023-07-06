@@ -75,11 +75,11 @@ export default function ItemDetails(props) {
         <div className=" d-flex flex-column flex-lg-row align-items-center w-100">
           <div className="me-2 d-flex justify-content-around p-3 w-100 w-lg-25  bg-body-tertiary rounded-3 mb-3 mb-lg-0">
             <span onClick={() => setCount(Math.max(count - 1, 1))}>
-              <i class="bi bi-dash h4"></i>
+              <i className="bi bi-dash h4"></i>
             </span>
             <span className="fw-bold">{count}</span>
             <span className="fw-bold" onClick={() => setCount(count + 1)}>
-              <i class="bi bi-plus h4"></i>
+              <i className="bi bi-plus h4"></i>
             </span>
           </div>
           <div className="w-100 w-lg-75 ">
