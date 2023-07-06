@@ -9,8 +9,8 @@ export default function ItemDetails(props) {
     const [count,setCount] = useState(1);
     const dispatch = useDispatch();
   return (
-    <div className="row item-details  mt-5 px-lg-5 mb-5">
-       <div className="d-block d-lg-none">
+    <div className="row item-details  mt-lg-5 px-lg-5 mb-5">
+       <div className="d-block d-lg-none p-0">
         <HomeCarousel/>
         </div> 
       <div className="col-12 col-lg-7  flex-wrap d-lg-flex d-none">
@@ -56,9 +56,9 @@ export default function ItemDetails(props) {
           />
         </div>
       </div>
-      <div className="col-12 col-lg-5 mt-3 pt-5">
+      <div className="col-12 col-lg-5 mt-3 pt-lg-5">
         <p className="title text-uppercase fw-bold ">Sneaker Company</p>
-        <p className="item-name h1 fw-bolder mb-5">{item.name}</p>
+        <p className="item-name h1 fw-bolder mb-3 mb-lg-5">{item.name}</p>
         <p className="item-detail text-secondary fw-medium ">{item.detail}</p>
         <div className="d-flex flex-lg-column justify-content-between  ">
           <p className="d-flex align-items-center ">
