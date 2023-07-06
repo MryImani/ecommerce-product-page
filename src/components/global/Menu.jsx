@@ -4,7 +4,7 @@ export default function Menu(props){
       <div
         className={
           props.open
-            ? "d-block bg-dark bg-opacity-75 position-fixed z-index-10 w-100  h-100 left-0 top-0 overflow-auto "
+            ? "d-block bg-dark bg-opacity-75 position-fixed z-index-100 w-100  h-100 left-0 top-0 overflow-auto "
             : "d-none"
         }
       >

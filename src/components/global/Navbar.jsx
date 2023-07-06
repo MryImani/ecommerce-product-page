@@ -10,7 +10,7 @@ export default function Navbar(props){
         <div className="d-lg-none me-3" onClick={props.openMenu}>
           <i className="bi bi-list h1 text-secondary fw-bold "></i>
         </div>
-        <Image src="/images/logo.svg" />
+        <Image src="/images/logo.svg" alt="logo"/>
         <nav className="navbar p-0 d-flex justify-content-end justify-content-lg-between  flex-grow-1 align-items-center">
           <ul className="d-none d-lg-flex list-unstyled m-0 mx-lg-5 ">
             <li className="me-3 py-4">

@@ -6,7 +6,7 @@ export default function Cart(props){
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cart.cart)
     return (
-      <div className="">
+      <div className="cart-list">
         {cart.map((item) => (
           <div className="item  ">
             <div className="d-flex justify-content-evenly  pb-3 ">
@@ -15,6 +15,7 @@ export default function Cart(props){
                   className="img-fluid rounded-3"
                   src={item.image}
                   width={80}
+                  alt={item.name}
                 />
               </div>
               <div className="mx-2">
@@ -23,10 +24,7 @@ export default function Cart(props){
                   <span className=" text-secondary fw-semibold">
                     ${item.price} x {item.count}
                   </span>
-                  <span className=" fw-bold">
-                    {" "}
-                    ${item.price * item.count}
-                  </span>
+                  <span className=" fw-bold"> ${item.price * item.count}</span>
                 </p>
               </div>
               <div className="d-flex justify-content-center align-items-center">

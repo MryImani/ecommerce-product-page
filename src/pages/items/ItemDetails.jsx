@@ -10,9 +10,9 @@ export default function ItemDetails(props) {
     const dispatch = useDispatch();
   return (
     <div className="row item-details  mt-lg-5 px-lg-5 mb-5">
-       <div className="d-block d-lg-none p-0">
-        <HomeCarousel/>
-        </div> 
+      <div className="d-block d-lg-none p-0">
+        <HomeCarousel />
+      </div>
       <div className="col-12 col-lg-7  flex-wrap d-lg-flex d-none">
         <div className=" flex-fill m-3">
           <Image
@@ -20,6 +20,7 @@ export default function ItemDetails(props) {
             width={550}
             height={100}
             src="/images/image-product-1.jpg"
+            alt="image-product-1"
           />
         </div>
 
@@ -29,6 +30,7 @@ export default function ItemDetails(props) {
             width={100}
             height={100}
             src="/images/image-product-1-thumbnail.jpg"
+            alt="image-product-1"
           />
         </div>
         <div className="my-4 mx-4 ">
@@ -37,6 +39,7 @@ export default function ItemDetails(props) {
             width={100}
             height={100}
             src="/images/image-product-2-thumbnail.jpg"
+            alt="image-product-2"
           />
         </div>
         <div className="my-4 mx-4 ">
@@ -45,6 +48,7 @@ export default function ItemDetails(props) {
             width={100}
             height={100}
             src="/images/image-product-3-thumbnail.jpg"
+            alt="image-product-3"
           />
         </div>
         <div className="my-4 ms-4 ">
@@ -53,6 +57,7 @@ export default function ItemDetails(props) {
             width={100}
             height={100}
             src="/images/image-product-4-thumbnail.jpg"
+            alt="image-product-4"
           />
         </div>
       </div>
