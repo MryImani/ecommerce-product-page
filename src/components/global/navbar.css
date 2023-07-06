@@ -30,6 +30,15 @@
 }
 @media  (max-width:375px){
     .navbar .cart{
+   right: -6rem;
+    top: 4.5rem;
+    width: 22rem;
+
+}
+    
+}
+@media  (max-width:350px){
+    .navbar .cart{
    right: -5rem;
     top: 4.5rem;
     width: 21rem;

@@ -1,4 +1,6 @@
-
+.carousel-control-next, .carousel-control-prev{
+   z-index: 0 !important;
+}
 .carousel-indicators{
     display: none !important;
 }
